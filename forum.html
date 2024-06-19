@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Simple Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+        <h1>Simple Forum</h1>
+        <div id="threadList"></div>
+        <h2>Create New Thread</h2>
+        <form id="threadForm">
+            <input type="text" id="threadTitle" placeholder="Thread title" required>
+            <textarea id="threadBody" placeholder="Thread body" required></textarea>
+            <button type="submit">Create Thread</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
