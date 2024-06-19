@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
             threadElement.innerHTML = `
                 <h3>${thread.title}</h3>
                 <p>${thread.body}</p>
-                <button onclick="showComments(${index})">Show Comments</button>
+                <button onclick="showComments(${index})">ดูคอมเม้น</button>
                 <div id="comments-${index}" class="comments" style="display: none;">
                     <h4>Comments</h4>
                     <div id="commentList-${index}"></div>
                     <input type="text" id="commentAuthor-${index}" placeholder="Your name" required>
                     <textarea id="commentBody-${index}" placeholder="Add a comment" required></textarea>
-                    <button onclick="addComment(${index})">Add Comment</button>
+                    <button onclick="addComment(${index})">เพิ่มคอมเม้น</button>
                 </div>
             `;
             threadList.appendChild(threadElement);
